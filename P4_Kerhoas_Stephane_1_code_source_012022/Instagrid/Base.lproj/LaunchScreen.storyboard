@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="0Ej-NM-LMp">
+                                <rect key="frame" x="147" y="388" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="iGG-hI-ya0"/>
+                                    <constraint firstAttribute="width" constant="120" id="idN-oe-E03"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Instagrid" translatesAutoresizingMaskIntoConstraints="NO" id="TRz-t4-jYo">
+                                <rect key="frame" x="131" y="305" width="152" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="ZtS-7L-Wg7"/>
+                                    <constraint firstAttribute="width" constant="152" id="zTs-xq-UKA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.71418362859999995" green="0.84280592200000004" blue="0.8983900547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0Ej-NM-LMp" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Tyo-lw-cpi"/>
+                            <constraint firstItem="0Ej-NM-LMp" firstAttribute="top" secondItem="TRz-t4-jYo" secondAttribute="bottom" constant="17" id="VYB-zA-304"/>
+                            <constraint firstItem="0Ej-NM-LMp" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="XZd-ot-GAk"/>
+                            <constraint firstItem="TRz-t4-jYo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="a9U-Sb-3AH"/>
+                            <constraint firstItem="0Ej-NM-LMp" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="gWz-fi-s7o"/>
+                            <constraint firstItem="0Ej-NM-LMp" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="uIR-eJ-G7w"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon" width="60" height="60"/>
+        <image name="Instagrid" width="41.5" height="13"/>
+    </resources>
+</document>
