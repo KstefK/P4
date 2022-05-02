@@ -121,7 +121,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         pickedButton = sender
     }
     
-    // imagePicker controller instantiation to fill up button background image with selected
+    // imagePicker controller instantiation and fill up button background image with selected
     var imagePickerController: UIImagePickerController?
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -133,6 +133,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         pickedButton = nil
         self.dismiss(animated: true, completion: nil)
     }
+    
     // if pickerController canceled (optionnal)
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
@@ -146,12 +147,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
         
         // Define what to do with swipe gesture regarding device orientation
-        
         let swipePortraitDirection = swipeGesture.direction == .up && UIDevice.current.orientation.isPortrait
         let swipeLandscapeDirection = swipeGesture.direction == .left && UIDevice.current.orientation.isLandscape
         
-        // We have to init both the preview constants
-        guard swipePortraitDirection || swipeLandscapeDirection else {
+        // check and  init both the preview constants
+       guard swipePortraitDirection || swipeLandscapeDirection else {
             return
         }
         
